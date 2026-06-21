@@ -7,6 +7,8 @@
 body{
     font-family:Arial, sans-serif;
     line-height:1.6;
+    overflow-x: hidden;
+    overflow-y:visible;
 }
 
 header{
@@ -21,24 +23,39 @@ header{
 }
 
 .hero{
-    text-align:center;
-    padding:60px 10%;
-    background:#f8f4ea;
+    height: 700px;
+
+    background-image: url("images/img 1.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    
+
+    text-align: center;
+   padding-top:180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 .hero h1{
     font-size:48px;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero p{
-    margin-bottom:20px;
+  font-size: 1.2rem;
+    margin-bottom:30px;
 }
 
 .hero img{
     width:100%;
-    max-width:700px;
-    margin-top:30px;
+    max-width:1200px;
+    display:block;
+    margin:40px auto 0;
 }
 .btn{
     display:inline-block;
@@ -95,25 +112,37 @@ header{
     margin-bottom:20px;
 }
 .stats{
+    background:#f8f2f2;
+    padding:80px 10%;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:50px;
-    padding:60px 10%;
-    background:#f7f1f1;
+    gap:80px;
+
     flex-wrap:wrap;
 }
 
 .map img{
-    width:500px;
+    width:650px;
     max-width:100%;
+    display:block;
 }
 
 .numbers h2{
     font-size:40px;
     margin-top:20px;
+    margin-bottom: -41px;
 }
-
+.numbers p{
+    font-size:1.1rem;
+    
+}
+.numbers{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
 footer{
     text-align:center;
     padding:20px;
