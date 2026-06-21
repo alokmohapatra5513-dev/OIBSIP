@@ -40,3 +40,29 @@ header{
     max-width:700px;
     margin-top:30px;
 }
+.btn{
+    display:inline-block;
+    background:#009966;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:60px 10%;
+    flex-wrap:wrap;
+}
+
+.feature-card{
+    width:300px;
+    text-align:center;
+    padding:20px;
+}
+
+.feature-card img{
+    width:80px;
+    margin-bottom:15px;
+}
