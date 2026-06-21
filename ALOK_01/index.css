@@ -94,3 +94,29 @@ header{
 .device-content p{
     margin-bottom:20px;
 }
+.stats{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:60px 10%;
+    background:#f7f1f1;
+    flex-wrap:wrap;
+}
+
+.map img{
+    width:500px;
+    max-width:100%;
+}
+
+.numbers h2{
+    font-size:40px;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
