@@ -66,3 +66,31 @@ header{
     width:80px;
     margin-bottom:15px;
 }
+
+
+
+.devices{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 10%;
+    flex-wrap:wrap;
+}
+
+.device-image img{
+    width:350px;
+    max-width:100%;
+}
+
+.device-content{
+    max-width:450px;
+}
+
+.device-content h2{
+    margin-bottom:15px;
+}
+
+.device-content p{
+    margin-bottom:20px;
+}
