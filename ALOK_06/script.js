@@ -18,6 +18,8 @@ function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+
+
 function formatDate(date) {
   return new Date(date).toLocaleString();
 }
