@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+<!-- <h1 class="title">Simple Calculator</h1>
+
+    <div class="card">
+        <div class="display">
+            <p class="disnum"></p>
+            <button class="delete" onclick="deletex()">
+                <img class="backspace"
+                    src="/mainprojects/image/backspace symbol for calculator - Google Search_files/png-clipart-computer-icons-backspace-arrow-symbol-cross-arrow-angle-text-thumbnail.png"
+                    alt="">
+            </button>
+            <button class="cls" onclick="cls()">
+                cls
+            </button>
+        </div>
+        <div class="operation">
+            <div class="num">
+                <div class="top">
+                    <button class="one" onclick="press(1)">1</button>
+                    <button onclick="press(2)">2</button>
+                    <button onclick="press(3)">3</button>
+
+                </div>
+
+                <div class="mid">
+                    <button class="four" onclick="press(4)">4</button>
+                    <button onclick="press(5)">5</button>
+                    <button onclick="press(6)">6</button>
+                </div>
+                <div class="third-row">
+                    <button onclick="press(7)">7</button>
+                    <button onclick="press(8)">8</button>
+                    <button onclick="press(9)">9</button>
+                </div>
+                <div class="bottom">
+                    <button onclick="press('.')">.</button>
+                    <button onclick="press(0)">0</button>
+                    <button class="equal" onclick="calc()">=</button>
+                </div>
+            </div>
+            <div class="operator">
+                <button class="divide" onclick="insert('&divide;')">&divide;</button>
+                <button class="mul" onclick="insert('&times;')">&times;</button>
+                <button class="subtract" onclick="insert('-')">-</button>
+                <button class="add" onclick="insert('+')">+</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">Made by Alok</footer> -->
+
+ <h1 class="title">Simple Calculator</h1>
+
+    <div class="card">
+        <div class="display">
+            <p class="disnum"></p>
+
+            <button class="delete" onclick="deletex()">⌫</button>
+            <button class="cls" onclick="cls()">C</button>
+        </div>
+
+        <div class="operation">
+            <div class="num">
+                <div class="top">
+                    <button onclick="press(1)">1</button>
+                    <button onclick="press(2)">2</button>
+                    <button onclick="press(3)">3</button>
+                </div>
+
+                <div class="mid">
+                    <button onclick="press(4)">4</button>
+                    <button onclick="press(5)">5</button>
+                    <button onclick="press(6)">6</button>
+                </div>
+
+                <div class="third-row">
+                    <button onclick="press(7)">7</button>
+                    <button onclick="press(8)">8</button>
+                    <button onclick="press(9)">9</button>
+                </div>
+
+                <div class="bottom">
+                    <button onclick="press('.')">.</button>
+                    <button onclick="press(0)">0</button>
+                    <button class="equal" onclick="calc()">=</button>
+                </div>
+            </div>
+
+            <div class="operator">
+                <button onclick="insert('/')">÷</button>
+                <button onclick="insert('*')">×</button>
+                <button onclick="insert('-')">-</button>
+                <button onclick="insert('+')">+</button>
+            </div>
+        </div>
+    </div>
+
+   <div class="signature">
+    <span>Designed & Developed by</span>
+    <strong>Alok</strong>
+</div>
+    
+
+    <script src="Calculator.js"></script>
+</body>
+
+</html>
