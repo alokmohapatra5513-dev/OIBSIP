@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thermos | Advanced Temperature Converter</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="live-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Thermos<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#converter">Converter</a></li>
+          <li><a href="#formulas">Formulas</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Precision Temperature Conversion</h1>
+        <p>
+          A beautifully simple, fast, and interactive tool to seamlessly convert
+          between Celsius, Fahrenheit, and Kelvin. Built for accuracy, styled
+          for elegance.
+        </p>
+        <a href="#converter" class="btn-primary">Launch Converter</a>
+      </div>
+      <div class="hero-visual">
+        <div class="interactive-glow-card">
+          <span class="glow-title">Live Dynamic Engine</span>
+          <div class="indicator-bar"><div class="indicator-fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="converter" class="converter-section">
+      <div class="converter-card">
+        <h2>Temperature Converter</h2>
+        <p class="subtitle">
+          Enter the value, select the source unit, and get instant calculations.
+        </p>
+
+        <form id="calc-form" onsubmit="return false;">
+          <div class="input-group">
+            <label for="temp-input">Enter Temperature</label>
+            <input
+              type="number"
+              id="temp-input"
+              placeholder="e.g., 25"
+              step="any"
+              required
+            />
+            <span class="error-msg" id="error-msg"
+              >Please enter a valid number</span
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="unit-select">From Unit</label>
+            <select id="unit-select">
+              <option value="C">Celsius (°C)</option>
+              <option value="F">Fahrenheit (°F)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+
+          <button type="button" id="convert-btn" class="btn-submit">
+            Convert Now
+          </button>
+        </form>
+
+        <hr class="divider" />
+
+        <div class="results-container" id="results-area">
+          <h3>Converted Results:</h3>
+          <div class="results-grid">
+            <div class="result-box" id="box-1">
+              <span class="result-label">Celsius</span>
+              <span class="result-value" id="res-celsius">--</span>
+            </div>
+            <div class="result-box" id="box-2">
+              <span class="result-label">Fahrenheit</span>
+              <span class="result-value" id="res-fahrenheit">--</span>
+            </div>
+            <div class="result-box" id="box-3">
+              <span class="result-label">Kelvin</span>
+              <span class="result-value" id="res-kelvin">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulas" class="formulas-section">
+      <h2>Conversion Mechanics</h2>
+      <p class="section-desc">
+        Curious about how the math works? Here are the fundamental formulas used
+        to shift scales.
+      </p>
+
+      <div class="formulas-grid">
+        <div class="formula-card">
+          <h4>Celsius to Others</h4>
+          <p><strong>Fahrenheit:</strong> (C × 9/5) + 32</p>
+          <p><strong>Kelvin:</strong> C + 273.15</p>
+        </div>
+        <div class="formula-card">
+          <h4>Fahrenheit to Others</h4>
+          <p><strong>Celsius:</strong> (F - 32) × 5/9</p>
+          <p><strong>Kelvin:</strong> ((F - 32) × 5/9) + 273.15</p>
+        </div>
+        <div class="formula-card">
+          <h4>Kelvin to Others</h4>
+          <p><strong>Celsius:</strong> K - 273.15</p>
+          <p><strong>Fahrenheit:</strong> ((K - 273.15) × 9/5) + 32</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Thermos Web App. Designed with precision.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
