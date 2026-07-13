@@ -7,6 +7,8 @@ const showLogin = document.getElementById("showLogin");
 const loginUser = document.getElementById("loginUser");
 const loginPassword = document.getElementById("loginPassword");
 
+
+
 const registerUsername = document.getElementById("registerUsername");
 const registerEmail = document.getElementById("registerEmail");
 const registerPassword = document.getElementById("registerPassword");
