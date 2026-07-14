@@ -1,104 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aura — Next-Gen Workspace</title>
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts & Lucide Icons for premium look -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
 
-    <!-- Animated Background Mesh -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
     <div class="bg-glow"></div>
 
-    <!-- Header / Navigation -->
     <header class="header">
-        <div class="logo">
-            <span class="logo-dot"></span>
-            Aura
-        </div>
-        <nav class="nav">
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#about" class="nav-link">About</a>
-        </nav>
-        <div class="header-cta">
-            <a href="#" class="btn btn-secondary">Login</a>
-            <a href="#" class="btn btn-primary">Get Started</a>
-        </div>
+      <div class="logo">
+        <span class="logo-dot"></span>
+        Aura
+      </div>
+      <nav class="nav">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+      <div class="header-cta">
+        <a href="#" class="btn btn-secondary">Login</a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
     </header>
 
     <main class="main-container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-tag animate-fade">
-                <i data-lucide="sparkles" class="icon-sparkle"></i> Introducing Aura 2.0
-            </div>
-            <h1 class="hero-title animate-slide">
-                Design your workspace.<br>
-                <span>Elevate your craft.</span>
-            </h1>
-            <p class="hero-subtitle animate-slide-delay">
-                A minimal, lightning-fast workspace designed for creators. Organize your ideas, collaborate with your team, and ship beautiful projects without the friction.
-            </p>
-            <div class="hero-actions animate-fade-delay">
-                <a href="#" class="btn btn-primary btn-large">Start for Free</a>
-                <a href="#" class="btn btn-outline btn-large">
-                    <i data-lucide="play-circle"></i> Watch Demo
-                </a>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero-tag animate-fade">
+          <i data-lucide="sparkles" class="icon-sparkle"></i> Introducing Aura
+          2.0
+        </div>
+        <h1 class="hero-title animate-slide">
+          Design your workspace.<br />
+          <span>Elevate your craft.</span>
+        </h1>
+        <p class="hero-subtitle animate-slide-delay">
+          A minimal, lightning-fast workspace designed for creators. Organize
+          your ideas, collaborate with your team, and ship beautiful projects
+          without the friction.
+        </p>
+        <div class="hero-actions animate-fade-delay">
+          <a href="#" class="btn btn-primary btn-large">Start for Free</a>
+          <a href="#" class="btn btn-outline btn-large">
+            <i data-lucide="play-circle"></i> Watch Demo
+          </a>
+        </div>
+      </section>
 
-        <!-- Feature Columns / Grid Section -->
-        <section id="features" class="features-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i data-lucide="layers"></i>
-                </div>
-                <h3>Visual Canvas</h3>
-                <p>Drag, drop, and organize your thoughts visually. Infinite layouts tailored exactly to your unique creative process.</p>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="card card-highlight">
-                <div class="card-icon">
-                    <i data-lucide="zap"></i>
-                </div>
-                <h3>Instant Sync</h3>
-                <p>Zero lag. Zero reload. Your team stays completely aligned in real-time, no matter where they are working from.</p>
-            </div>
+      <section id="features" class="features-grid">
+        <div class="card">
+          <div class="card-icon">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3>Visual Canvas</h3>
+          <p>
+            Drag, drop, and organize your thoughts visually. Infinite layouts
+            tailored exactly to your unique creative process.
+          </p>
+        </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-                <div class="card-icon">
-                    <i data-lucide="shield"></i>
-                </div>
-                <h3>Secure by Default</h3>
-                <p>Enterprise-grade encryption protecting your most valuable ideas and intellectual property around the clock.</p>
-            </div>
-        </section>
+        <div class="card card-highlight">
+          <div class="card-icon">
+            <i data-lucide="zap"></i>
+          </div>
+          <h3>Instant Sync</h3>
+          <p>
+            Zero lag. Zero reload. Your team stays completely aligned in
+            real-time, no matter where they are working from.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i data-lucide="shield"></i>
+          </div>
+          <h3>Secure by Default</h3>
+          <p>
+            Enterprise-grade encryption protecting your most valuable ideas and
+            intellectual property around the clock.
+          </p>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Aura Technologies Inc. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact</a>
-            </div>
+      <div class="footer-content">
+        <p>&copy; 2026 Aura Technologies Inc. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
         </div>
+      </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
     <script>
-        lucide.createIcons();
+      lucide.createIcons();
     </script>
-</body>
+  </body>
 </html>
